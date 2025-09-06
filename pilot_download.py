@@ -1,7 +1,12 @@
 from astroquery.mast import Observations
-import os
 
-obs_table = Observations.query_criteria(objectname="NGC4414", obs_collection=["HST"])
+obs_table = Observations.query_criteria(
+    objectname="NGC4414",
+    obs_collection="HST",
+    instrument_name="WFPC2",
+    dataproduct_type="image"
+)
+
 
 
 wfpc2_obs = obs_table[
