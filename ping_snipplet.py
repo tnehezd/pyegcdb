@@ -14,7 +14,7 @@ def connect_to_database():
         
         # Verify the server connection via heartbeat ping
         if db.ping():
-            print("Successfully connected to Konkoly EGCDb server!")
+            print("Successfully connected to Konkoly EGCDB server!")
             return db
         else:
             print("Server is reachable, but returned a connection error.")
