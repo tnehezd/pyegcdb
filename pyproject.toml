@@ -24,5 +24,7 @@ dependencies = [
     "astropy>=5.0.0"  # For astronomical things
 ]
 
+license = {text = "GNU GPLv3"}
+
 [tool.setuptools.packages.find]
 where = ["src"] 
