@@ -1,11 +1,31 @@
-# extragalactic_cepheid_database
-consolidate ALLSTAR/DAOPHOT things
+# pyegcdb
+
+`pyegcdb` is the official Python client for the **Konkoly Cepheid Database**. It provides astronomers and researchers with a seamless interface to query light curves and stellar catalog data directly within a Python environment.
+
+## Installation
+
+You can install the package directly from PyPI:
+
+```bash
+pip install pyegcdb
+```
 
 
-astroquery
+## Quick Start
 
-photutils astropy
-mosaic: reproject
+To begin using the library, initialize the client and fetch data by the star's name:
 
+```python
+from pyegcdb import KonkolyCepheids
 
-fastkde
+# 1. Initialize the client
+db = KonkolyCepheids()
+
+# 2. Fetch light curve data for a specific star
+star_name = "OGLE LMC-SC1 14252"
+lc_df = db.load_datapoints(identifier=star_name, bands=['B'])
+
+# 3. Preview the results
+if not lc_df.empty:
+    print(lc_df.head())
+```
