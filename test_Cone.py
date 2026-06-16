@@ -1,5 +1,5 @@
 import pandas as pd
-from cepheid_client import KonkolyCepheids
+from pyegcdb import KonkolyCepheids
 
 db = KonkolyCepheids()
 

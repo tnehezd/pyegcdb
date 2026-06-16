@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cepheid-client"
-version = "0.1.0"
+name = "pyegcdb"
+version = "0.1.0a1"
 description = "Python client for the Extragalactic Cepheid Database of the Konkoly Observatory"
 readme = "README.md"
 authors = [

@@ -1,5 +1,5 @@
 import pandas as pd
-from cepheid_client import KonkolyCepheids
+from pyegcdb import KonkolyCepheids
 
 # Beállítjuk a Pandast, hogy ne törje el a sorokat, és szép széles legyen a táblázat
 pd.set_option('display.max_columns', None)

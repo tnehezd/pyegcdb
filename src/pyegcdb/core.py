@@ -160,8 +160,9 @@ class KonkolyCepheids:
         try:
             response = requests.get(url, params=params, timeout=15)
             
-            if response.status_code == 404:
-                print(f"❌ Error: Cepheid '{identifier}' does not exist in the database.")
+            #DEBUG: Ha 500-as hiba van, írjuk ki, mit mondott a szerver
+            if response.status_code == 500:
+                print(f"❌ Server error 500! Szerver válasza: {response.text[:500]}")
                 return pd.DataFrame()
             elif response.status_code != 200:
                 print(f"❌ Server error: {response.status_code}")

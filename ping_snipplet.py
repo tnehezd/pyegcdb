@@ -1,5 +1,5 @@
 import sys
-from cepheid_client import KonkolyCepheids
+from pyegcdb import KonkolyCepheids
 
 def connect_to_database():
     """
