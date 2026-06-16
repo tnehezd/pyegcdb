@@ -2,3 +2,16 @@ ngc4414_fits/
 .DS_Store
 NGC4414_science_fits/
 MAST_2025-09-06T20_06_58.826Z/
+
+
+
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Distribution / packaging
+*.egg-info/
+.eggs/
+dist/
+build/
