@@ -3,8 +3,12 @@ ngc4414_fits/
 NGC4414_science_fits/
 MAST_2025-09-06T20_06_58.826Z/
 
+galaxy_inventory.csv
 
+audit.py
+audit_raw.py
 
+*.csv
 
 # Python bytecode
 __pycache__/

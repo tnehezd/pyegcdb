@@ -78,12 +78,19 @@ class KonkolyCepheids:
                     latest_pos = sorted(base2, key=lambda x: x.get('art_id', 0) or 0, reverse=True)[0]
                     latest_art_id = latest_pos.get('art_id', 0) or 0
 
+                gal = item.get('galaxy')
+
+                if isinstance(gal, dict):
+                    galaxy_name = gal.get('name')
+                else:
+                    galaxy_name = None
+
                 record = {
                     'id': item.get('id'),
                     'name': item.get('name'),
-                    'galaxy': item.get('galaxy', {}).get('gen_short_name', 'Unknown'),
+                    'galaxy': galaxy_name,
                     'type': item.get('types', [{}])[0].get('type') if item.get('types') else None,
-                    'latest_art_id': latest_art_id  # Ezt használjuk majd a drop_duplicates-nél
+                    'latest_art_id': latest_art_id
                 }
 
                 if 'distance_arcsec' in item:
