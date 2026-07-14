@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyegcdb"
-version = "0.1.0a1"
+version = "0.2.0a"
 description = "Python client for the Extragalactic Cepheid Database of the Konkoly Observatory"
 readme = "README.md"
 authors = [

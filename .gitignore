@@ -5,7 +5,7 @@ MAST_2025-09-06T20_06_58.826Z/
 
 galaxy_inventory.csv
 
-./vscode
+.vscode
 
 audit.py
 audit_raw.py
